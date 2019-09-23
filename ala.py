@@ -10,10 +10,7 @@ import argparse
 from luhnmod1 import algoth
 #Vars
 file = open('binlist')
-run = True
 binlist = []
-namelist = []
-surnamelist = []
 pan = ''
 
 parser = argparse.ArgumentParser(
