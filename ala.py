@@ -9,7 +9,7 @@ import random
 import argparse
 from luhnmod1 import algoth
 #Vars
-file = open('data/binlist')
+file = open('binlist')
 run = True
 binlist = []
 namelist = []
