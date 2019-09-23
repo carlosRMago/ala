@@ -46,13 +46,13 @@ if(__name__ == '__main__'):
 	genvalidcc(file)
 	args = parser.parse_args()
 	if(args.todos == True):
-		for bin in binlist:
-			pan = algoth(bin)
+		for xbin in binlist:
+			pan = algoth(xbin)
 	if(args.cantidad == True):
 		contop2 = 0
 		opcant = input('cantidad > ')
-		for bin in binlist:
-			pan = algoth(bin)
+		for xbin in binlist:
+			pan = algoth(xbin)
 			contop2 += 1
 			if(contop2 >= int(opcant)):
 				break
