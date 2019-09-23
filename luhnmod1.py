@@ -11,7 +11,7 @@ validcc = []
 def algoth(bin):
 	#funcvars
 	prpan = []
-	ibin = bin
+	ibin = xbin
 	pan = ''
 	nrnd1 = random.randint(0,9)
 	check = random.randint(0,9) #ultimo digito del pan
