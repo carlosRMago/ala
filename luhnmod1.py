@@ -11,7 +11,7 @@ validcc = []
 def algoth(bin):
 	#funcvars
 	prpan = []
-	ibin = xbin
+	ibin = bin
 	pan = ''
 	nrnd1 = random.randint(0,9)
 	check = random.randint(0,9) #ultimo digito del pan
@@ -55,7 +55,7 @@ def algoth(bin):
 			print("[0]ok|[1]bad>"+str(sum%10))
 			print(cc)
 			print("$#bin#$")
-			os.system('sudo grep -i '+cc[0:6]+' data/binlist')
+			os.system('sudo grep -i '+cc[0:6]+' binlist')
 			print("$~$~$~$~$~$~$~-~$-~$~$~$~$~$")
 	if(sum%10 != 0):
 		pass
