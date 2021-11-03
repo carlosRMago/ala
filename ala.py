@@ -2,7 +2,7 @@
 #-*- coding:utf-8 -*-
 #TO DO
 # agregar filtros para que muestre busquedas especificas
-#Autor Carlos a r Mago & Fr33 Coders Gpl v3
+#Astroindi Gpl v3
 
 import os
 import random
@@ -19,7 +19,7 @@ parser = argparse.ArgumentParser(
 	epilog = '[Analizador] [L]uhn [A]lgoritmo'
 	)
 parser.add_argument('--todos', action='store_true', help='Extrae todas las lineas de bin list para generar nros luhn\'s')
-parser.add_argument('--cantidad', action='store_true', help='Extrae la cantidad seleccionada para mostrar nros luh\'s aleatorios')
+#parser.add_argument('--cantidad', action='store_true', help='Extrae la cantidad seleccionada para mostrar nros luh\'s aleatorios')
 ##Extrae los primeros 8 caracteres del archivo binlist
 def genvalidcc(file):
 	e = 0
@@ -45,12 +45,12 @@ if(__name__ == '__main__'):
 	if(args.todos == True):
 		for xbin in binlist:
 			pan = algoth(xbin)
-	if(args.cantidad == True):
-		contop2 = 0
-		opcant = input('cantidad > ')
-		for xbin in binlist:
-			pan = algoth(xbin)
-			contop2 += 1
-			if(contop2 >= int(opcant)):
-				break
+#	if(args.cantidad == True):
+#		contop2 = 0
+#		opcant = input('cantidad > ')
+#		for xbin in binlist:
+#			pan = algoth(xbin)
+#			contop2 += 1
+#			if(contop2 >= int(opcant)):
+#				break
 	
